@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToolHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ToolHub</h1>
+
+    <div class="tool">
+        <h2>Password Generator</h2>
+        <input type="number" id="passLength" value="12">
+        <button onclick="generatePassword()">Generate</button>
+        <input type="text" id="password" readonly>
+    </div>
+
+    <div class="tool">
+        <h2>Age Calculator</h2>
+        <input type="date" id="dob">
+        <button onclick="calculateAge()">Calculate</button>
+        <p id="ageResult"></p>
+    </div>
+
+    <div class="tool">
+        <h2>BMI Calculator</h2>
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="height" placeholder="Height (m)">
+        <button onclick="calculateBMI()">Calculate</button>
+        <p id="bmiResult"></p>
+    </div>
+
+    <div class="tool">
+        <h2>Text Repeater</h2>
+        <input type="text" id="repeatText" placeholder="Enter text">
+        <input type="number" id="repeatCount" value="5">
+        <button onclick="repeatText()">Repeat</button>
+        <textarea id="repeatResult"></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
